@@ -104,7 +104,7 @@ int main(int argc, char **argv)
             Command_Now.header.stamp = ros::Time::now();
             Command_Now.Mode = prometheus_msgs::ControlCommand::Idle;
             Command_Now.Command_ID = Command_Now.Command_ID + 1;
-            Command_Now.Reference_State.yaw_ref = 999;
+            //Command_Now.Reference_State.yaw_ref = 999;
             move_pub.publish(Command_Now);
         }
 
